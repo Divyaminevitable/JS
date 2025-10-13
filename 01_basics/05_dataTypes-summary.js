@@ -1,6 +1,8 @@
 //  Primitive
 // 7 types : String , number , boolean, null, undefined, Symbol, BigInt
 
+const { use } = require("react");
+
 // type of null is Object
 // 1) Primitive Datatypes
 //        Number => number
@@ -47,3 +49,26 @@ console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(typeof myFunction);
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+// heap Example
+
+let myYoutubename = "divyamdotcom"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+console.log(anothername);
+
+// Heap Example
+let user ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let user2 = user
+
+user2.email = "divyam@gmail.com"
+
+console.log(user.email);
+console.log(user2.email);
